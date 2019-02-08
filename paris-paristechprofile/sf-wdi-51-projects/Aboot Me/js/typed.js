@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   var typed = new Typed('#typed', {
-    strings: ['', 'creative', 'intuitive','tenacious', 'musical', 'intellectual', 'optimistic', `realistic`,'strong', 'friendly', 'empathetic', 'attentive', 'poised', 'thoughtful', 'driven', 'me'],
+    strings: [`Hello, world!`, 'Who am I?', 'creative', 'intuitive','tenacious', 'musical', 'intellectual', 'optimistic', `realistic`,'strong', 'friendly', 'empathetic', 'attentive', 'poised', 'thoughtful', 'driven', `Paris Taylor`],
     typeSpeed: 50,
     backSpeed: 20,
     startDelay: 2000,

@@ -69,6 +69,9 @@ p{
 	margin:0 0 20px;
 	text-align: center;
 }
+.introText{
+
+}
 
 hr{
 	border: 0;
@@ -97,8 +100,12 @@ hr{
 	margin:20px 0;
 	font-size: 0.75em;
 }
-/*materialize carousel1 CSS extracted from minified file*/
-/*materialize carousel1 CSS extracted from minified file*/
+
+/*images*/
+img{
+
+}
+
 /*materialize carousel1 CSS extracted from minified file*/
 .carousel1 {
     overflow: hidden;
@@ -159,7 +166,7 @@ hr{
 }
 
 .carousel1 .carousel1-item>img {
-    width: 100%
+    width: 100%;
 }
 
 .carousel1 .indicators {
@@ -186,6 +193,8 @@ hr{
 
 .carousel1 .indicators .indicator-item.active {
     background-color: #fff
+
+
 }
 
 .carousel1.scrolling .carousel1-item .materialboxed,

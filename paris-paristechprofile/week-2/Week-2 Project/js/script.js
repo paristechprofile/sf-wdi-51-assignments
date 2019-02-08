@@ -34,7 +34,7 @@
 
 	stock.fruit.forEach(fruit => {
 		masonaryFruit.append(`
-			<div id="${fruit.id}" class="card">
+			<div id="${fruit.id}" class="card" data-name="">
 	          <img src=${fruit.image} class="card-img-top" alt="...">
 	          <div class="card-body ${fruit.name}>
 	            <h5 class="card-title">${fruit.name}</h5>
@@ -43,7 +43,7 @@
 	          </div>
 	        </div>
 		`)
-		let addItem = $(`#${fruit.id}`);
+		let addItem = $(`#${fruit.div}`);
 		addItem.addEventListener("click", function(){
 	})
 
