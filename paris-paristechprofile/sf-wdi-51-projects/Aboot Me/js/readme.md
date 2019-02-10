@@ -88,7 +88,7 @@ Tablet & Desktop:
 
 
 ## Big Wins & Challenges
-  - I decided to use both bootstrap and minified. Bootstrap for a quick overall structure and minified for it's carousel. Which meant conflicting css and javascript. So I extracted only the css that directly affected the carousel structure. Then I found every instance of `carousel` in the javascript and changed it's class to `carousel1`to give it a unique class that wouldn't interfere with bootstrap.
+  - I decided to use both bootstrap and minified. Bootstrap for a quick overall structure and minified for it's carousel. Which meant conflicting css and javascript. So I extracted only the css that directly affected the carousel structure. Then I found every instance of `carousel` in the javascript and changed it's class to `carousel1`to give it a unique class that wouldn't interfere with any other code.
 
 
 ## Unsolved Problems

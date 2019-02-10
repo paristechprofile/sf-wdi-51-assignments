@@ -3,74 +3,114 @@
 *{
 	padding:0;
 	margin:0;
+	box-sizing: border-box;
 }
 
+.row{
+	justify-content: center;
+	/*background-color: black;*/
+}
 .row1{
-	border: 1px solid black;
-	/*display: flex;*/
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	/*background-color: black;*/
 	
 }
 .col-6{
-	border: 1px solid black;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;	 
+	align-items: center;
+	/*background-color: black;*/	 
 }
-
 .col-12{
-	border: 1px solid green; 
+	/*background-color: black;*/
+}
+.col-12{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
+	/*background-color: black;*/
 
 
 }
 nav{
+	/*background-color: black;*/
+	background-color: white;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: center
+	text-align: center;
+	position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
 
 }
 body{
 	font-family: "Ubuntu", sans-serif;
 	font-size: 100%;
-	background:#f8f8f8;
+	color: #6C656C;
+	background:white;
 }
 container-fluid{
 	border: 1px solid black;
 }
-<span>{
+
+.banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20em 0em;
+	/*background-color: black;*/
+}
+
+.introText{
+	/*padding: 0em 10em;*/
+}
+
+span{
 	font-family: "Ubuntu", sans-serif;
-	font-size: 4em;
+	font-size: 1em;
 }
 
 a{
 	text-decoration: none;
-	color:#666;
+	color: #6C656C;
 }
 a:hover{
 	color:#999;
+	transition: all .3s ease;
+	text-decoration: none;
 }
 
 button {
 	padding: 10px;
 	border-radius: 3px;
 	background: #E0E0E0;
-	border: #CCC 1px solid;
+	/*border: #CCC 1px solid;*/
 }
 
 p{
 	line-height: 2em;
-	margin:0 0 20px;
 	text-align: center;
+	color: grey;
+
+}
+p>a{
+	
+}
+p>a:hover{
+	color: #AAAAAA;
+	text-decoration: none;
+	transition: all .4s ease;
 }
 .introText{
-
+	max-width: 707px;
 }
 
 hr{
@@ -78,7 +118,38 @@ hr{
 	border-bottom: #CCC 2px solid;
 	margin: 30px auto;
 }
+h2{
+	color: #6C656C;
+}
 
+.projects{
+	padding: 4em 0em;
+}
+
+.projects2{
+	padding-bottom: 2em;	
+}
+
+.resume{
+	padding: 4em 0em;
+}
+
+.resume2{
+	padding-bottom: 2em;
+}
+.carouselRow{
+	display: flex;
+	flex-direction: column;
+}
+
+.carouselColumn{
+	display: flex;
+	flex-direction: row;
+
+}
+.connect{
+	padding: 4em 0em;
+}
 .title{
 	font-size: 4em;
 }
@@ -91,9 +162,12 @@ hr{
 .type-wrap{
 	margin:10px auto;
 	padding:20px;
-	background:#f0f0f0;
+	color: #fff
 	border-radius:5px;
-	border:#CCC 1px solid;
+	/*border:#CCC 1px solid;*/
+}
+#typed{
+	color: #6C656C;
 }
 
 .links{
@@ -105,111 +179,200 @@ hr{
 img{
 
 }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-/*materialize carousel1 CSS extracted from minified file*/
-.carousel1 {
-    overflow: hidden;
-    position: relative;
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*FORM*/
+/* ----------------------------------------
+Comment Form
+------------------------------------------- */
+form {
+	margin: 1% 3%;
+}
+.formBox{
+	/*margin: 0em 4em;*/
+}
+form-control  {
+    display: flex;
+    border: .15em solid #44545E;
+    background-color: white;
+    border-radius: 0;
+    margin: .5em 2em;
+    padding: 2em;
+    text-align: left;
     width: 100%;
-    height: 400px;
-    -webkit-perspective: 500px;
-    perspective: 500px;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: 0% 50%;
-    transform-origin: 0% 50%
+    font-size: .9rem;
+    font-weight: 700;
 }
-
-.carousel1.carousel1-slider {
-    top: 0;
-    left: 0
+.formRow1{
+	padding: 0em 3em;
 }
-
-.carousel1.carousel1-slider .carousel1-fixed-item {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    z-index: 1
+.formRow2{
+	padding: 1.3em 0em;
 }
-
-.carousel1.carousel1-slider .carousel1-fixed-item.with-indicators {
-    bottom: 68px
-}
-
-.carousel1.carousel1-slider .carousel1-item {
+/*
+form-control2 {
+    display: block;
     width: 100%;
-    height: 100%;
-    min-height: 400px;
-    position: absolute;
-    top: 0;
-    left: 0
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+*/
+/*buttons*//*buttons*//*buttons*//*buttons*/
+button {
+	cursor: pointer;
+	outline: 0;
+	border: 2px solid #7D6F7A;
+	color: #44545E;
+	padding: 8px 25.5px;
+	padding: 8px 1.7rem;
+	background-color: transparent;
+	font-weight: 500;
+	font-size: 12.299px;
+	font-size: .82rem;
+	letter-spacing: 1.2px;
+	letter-spacing: .08rem;
+	transition: all .3s ease-in-out;
+	text-align: center;
 }
 
-.carousel1.carousel1-slider .carousel1-item h2 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 32px
-}
-
-.carousel1.carousel1-slider .carousel1-item p {
-    font-size: 15px
-}
-
-.carousel1 .carousel1-item {
-    visibility: hidden;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 0;
-    left: 0
-}
-
-.carousel1 .carousel1-item>img {
-    width: 100%;
-}
-
-.carousel1 .indicators {
-    position: absolute;
+button,
+input[type="submit"] {
+	cursor: pointer;
+	outline: 0;
+	display: flex;
+	border: .15em solid #7D6F7A;
+	background-color: white;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin: .5em 0em;
     text-align: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 700;
+    justify-content: center;
 }
 
-.carousel1 .indicators .indicator-item {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    height: 8px;
-    width: 8px;
-    margin: 24px 4px;
-    background-color: rgba(255, 255, 255, 0.5);
-    -webkit-transition: background-color .3s;
-    transition: background-color .3s;
-    border-radius: 50%
+button:hover,
+input[type="submit"]:hover {
+	background-color: #7D6F7A;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+	justify-content: center;
 }
 
-.carousel1 .indicators .indicator-item.active {
-    background-color: #fff
-
-
+*/
+button {
+	cursor: pointer;
+	outline: 0;
+	border: .15em solid #7D6F7A;
+	color: #44545E;
+	text-align: center;
+	background-color: transparent;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 12.299px;
+	font-size: .82rem;
+	letter-spacing: 1.2px;
+	letter-spacing: .08rem;
+	transition: all .3s ease-in-out;
 }
 
-.carousel1.scrolling .carousel1-item .materialboxed,
-.carousel1 .carousel1-item:not(.active)
-
-@media only screen and (max-width: 328px) {
+button:hover {
+	background-color: #6D6B6E;
+	color: white;
+	font-weight: 600;
+}
+.footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	text-align: center;
+	height: 5em;
+	padding-top: 5em;
+	/*background-color: black;*/
+}
+.fab{
+	padding: 1.2em;
+}
+/*.social{
+	padding: 0em 1.2em;
+}*/
+@media only screen and (max-width: 700px) {
   /*make nav disappear*/
-  nav {
-  	display: none;
-  }
-  .row1{
-	height: 30em;
-  }
-  span{
-	font-size: .9em;
-}
+  	nav {
+  		display: none;
+ 	}
+ 	.banner{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20em 0em;
+	}
+  	
+  	.hero{
+		padding: 0em 2em;
+  	}
+	.introText{
+		
+		max-width: 1270px;
+	}
+  	
+  	span{
+		font-size: .9em;
+	}
+	.projects{
+		padding:2em;
+	}
+	.connect{
+		padding:0em;
+	}
+	.formBox{
+		padding: 2em;
+	}
 
-}

@@ -40,8 +40,8 @@ If your partner forked the repository originally, you should fork their reposito
 Take a moment to familiarize yourself with the dataset by opening it in your browser: [http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson](http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson).
 
 + What is the structure of the data?
-    + How many earthquakes does it list?
-    + How would you grab the first earthquake?
+    + How many earthquakes does it list? <!-- 2 -->
+    + How would you grab the first earthquake? data.features(1).place
         * How would you grab its title?
         * How would you grab its geological coordinates:
             - *latitude*?
