@@ -1,13 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
   var typed = new Typed('#typed', {
-    strings: [``,``, `Hello, world!`, 'Who am I?', 'I am: creative', 'I am: useful', 'I am: tenacious', 'I am: thoughtful',
-    'I am: musical', 'I am: poised', 'I am: a minimalist',`I am:`,`I am:`,`I am:`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`],
-    typeSpeed: 60,
+    strings: [``,``, `Hello, world!`, 'Who am I?', 'I am: creative', 
+    'I am: useful', 'I am: tenacious', 'I am: thoughtful',
+    'I am: musical', 'I am: curious', 'I am: attentive', 'I am: a minimalist', 
+    `I am:`,`I am:`,`I am:`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,
+    `PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,
+    `PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,
+    `PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,
+    `PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,
+    `PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`,`PARIS TAYLOR`],
+    typeSpeed: 80,
     backSpeed: 40,
     startDelay: 500,
     smartBackspace: true,
     /*cursorChar: '_',*/
-    loop: true,
+    loop: false,
     fadeOut: false,
     loopCount: Infinity,
     onComplete: function(self) { prettyLog('onComplete ' + self) },
@@ -53,6 +60,13 @@ function toggleLoop(typed) {
     typed.loop = true;
   }
 }
+/* 
+//Floating button 
+import {MDCRipple} from '@material/ripple';
+
+const fabRipple = new MDCRipple(document.querySelector('.mdc-fab'));
+
+ */
 // Get the modal
 var modal = document.getElementById('myModal');
 
