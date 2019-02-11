@@ -60,13 +60,33 @@ function toggleLoop(typed) {
     typed.loop = true;
   }
 }
-/* 
-//Floating button 
-import {MDCRipple} from '@material/ripple';
 
-const fabRipple = new MDCRipple(document.querySelector('.mdc-fab'));
+$('#zoomBtn').click(function() {
+  $('.zoom-btn-sm').toggleClass('scale-out');
+  if (!$('.zoom-card').hasClass('scale-out')) {
+    $('.zoom-card').toggleClass('scale-out');
+  }
+});
 
- */
+$('.zoom-btn-sm').click(function() {
+  var btn = $(this);
+  var card = $('.zoom-card');
+  if ($('.zoom-card').hasClass('scale-out')) {
+    $('.zoom-card').toggleClass('scale-out');
+  }
+  if (btn.hasClass('zoom-btn-1')) {
+    card.css('background-color', '#d32f2f');
+  } else if (btn.hasClass('zoom-btn-2')) {
+    card.css('background-color', '#fbc02d');
+  } else if (btn.hasClass('zoom-btn-3')) {
+    card.css('background-color', '#388e3c');
+  } else if (btn.hasClass('zoom-btn-4')) {
+    card.css('background-color', '#1976d2');
+  } else {
+    card.css('background-color', '#7b1fa2');
+  }
+});
+
 // Get the modal
 var modal = document.getElementById('myModal');
 
