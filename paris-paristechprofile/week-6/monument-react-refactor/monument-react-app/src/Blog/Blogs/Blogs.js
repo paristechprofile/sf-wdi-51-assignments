@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Blogs.css';
-import img1 from './blog_1.jpg';
-import img2 from './images/blog_2.jpg';
-import img3 from './about.jpg';
+import img1 from './Images/blog_1.jpg';
+import img2 from './Images/blog_2.jpg';
+import img3 from './Images/about.jpg';
 
 const Blogs = () => {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-md-8">
+                <div className="col-8">
                     <article>
                         <h3>11/23/2016</h3>
                         <h2>A Visual Guide to the Southwest</h2>
@@ -18,7 +18,7 @@ const Blogs = () => {
                         <p>Give him a friend, we forget the trees get lonely too. That's why I paint - because I can create the kind of world I want - and I can make this world as happy as I want it. Just take out whatever you don't want. It'll change your entire perspective. I started painting as a hobby when I was little. I didn't know I had any talent. I believe talent is just a pursued interest. Anybody can do what I do. Just make a decision and let it go. It's beautiful - and we haven't even done anything to it yet. Put light against light - you have nothing. Put dark against dark - you have nothing. It's the contrast of light and dark that each give the other one meaning. See there how easy that is. Each highlight must have it's own private shadow. Just relax and let it flow. That easy. It's cold, but it's beautiful. Automatically, all of these beautiful, beautiful things will happen. Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. God gave you this gift of imagination. Use it. Isn't that fantastic that you can make whole mountains in minutes? We'll throw some happy little limbs on this tree. Now then, let's play.</p>
                     </article>
                 </div>	
-                <div className="col-md-4">
+                <div className="col-4">
                     <aside>
                         <h3>About Us</h3>
                         <p>Let's put some highlights on these little trees. The sun wouldn't forget them. Don't be afraid to make these big decisions. Once you start, they sort of just make themselves. There comes a nice little fluffer. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. Maybe there's a happy little bush that lives right there.</p>
@@ -28,12 +28,12 @@ const Blogs = () => {
                         <img src={img3} alt="images/about.jpg"/>
                         <h3>Recent Issues</h3>
                         <ul>
-                            <li><a href="">Issue Nineteen &mdash; Camping</a></li>
-                            <li><a href="">Issue Eighteen &mdash; Food</a></li>
-                            <li><a href="">Issue Seventeen &mdash; Signs</a></li>
-                            <li><a href="">Issue Sixteen &mdash; Friends</a></li>
-                            <li><a href="">Issue Fifteen &mdash; Carnivals</a></li>
-                            <li><a href="">Issue Fourteen &mdash; Gatherings</a></li>
+                            <li>Issue Nineteen &mdash; Camping</li>
+                            <li>Issue Eighteen &mdash; Food</li>
+                            <li>Issue Seventeen &mdash; Signs</li>
+                            <li>Issue Sixteen &mdash; Friends</li>
+                            <li>Issue Fifteen &mdash; Carnivals</li>
+                            <li>Issue Fourteen &mdash; Gatherings</li>
                         </ul>
                     </aside>
                 </div>
