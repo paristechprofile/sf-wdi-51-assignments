@@ -1,0 +1,70 @@
+
+header {
+	background-image: url('./home_header_bg.jpg');
+	background-size: cover;
+	background-position: center;
+	padding-top: 6rem;
+    padding-bottom: 2.5rem;
+    background-attachment: fixed;
+    height: 100vh;
+	background-position: center;
+	padding-top: 6rem;
+    padding-bottom: 2.5rem;
+    background-attachment: fixed;
+    height: 100vh;
+    text-align: center;
+	height: 40em;
+	margin-bottom: 4em;
+}
+header h2 {
+	font-size: 1em;
+	letter-spacing: 1em;
+	letter-spacing: 0.2rem;
+}
+a {
+    text-decoration: none;
+    color: #7B98AA;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+h1 a, h1 a:hover, header h2 {
+    color: #fff;
+}
+
+h1 {
+    font-size: 37.5px;
+    font-size: 2.5rem;
+    letter-spacing: .8rem;
+    
+}
+h1 a {
+    display: -webkit-flex;
+    display: flex;
+    color: #44545E;
+    color: white;
+    margin-top: 6em;
+    display: inline-block;
+}
+h1, h2, h3, h4 {
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h4{
+	font-size: 1em;
+	text-align: center;
+}
