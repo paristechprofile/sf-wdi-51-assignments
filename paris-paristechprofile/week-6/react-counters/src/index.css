@@ -12,11 +12,18 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .Counter {
   display: inline-block;
+  justify-content: center;
+  text-align: center;
   min-width: 30%;
+}
+h4{
+  text-align: center;
 }
