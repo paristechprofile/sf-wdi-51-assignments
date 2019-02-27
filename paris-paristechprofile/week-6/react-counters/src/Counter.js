@@ -6,18 +6,18 @@ class Counter extends Component {
   };
 
   increaseCount = () => {
-    let count = this.state.count + 1;
+    let newCount = this.state.count + 1;
   
     this.setState({
-      count
+      count: newCount
     });
   }
   
   decreaseCount = () => {
-    let count = this.state.count -1;
+    let newCount = this.state.count -1;
   
     this.setState({
-      count
+      count: newCount
     });
   }
   
@@ -30,7 +30,6 @@ class Counter extends Component {
       </div>
     );
   }
-
 
 
 }

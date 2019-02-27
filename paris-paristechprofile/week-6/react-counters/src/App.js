@@ -26,7 +26,7 @@ class App extends Component {
         increaseCounters = {this.increaseCounters}
         decreaseCounters = {this.decreaseCounters}/>
         <ContainerList 
-        counters = {this.props.counters} />
+        counters = {this.state.counters} />
       </div>
     );
   }

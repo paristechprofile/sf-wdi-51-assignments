@@ -6,7 +6,7 @@ class ContainerList extends Component {
   render() {
     let counters = [];
     
-    for (let i = 0; i < this.props.counter; i++) {
+    for (let i = 0; i < this.props.counters; i++) {
       counters.push(<Counter key={i} />)
     }
     return (<div className="Counter-row">{counters}</div>);
