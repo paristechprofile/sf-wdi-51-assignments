@@ -5,9 +5,11 @@ class Header extends Component {
   increaseCounters = () => {
     this.props.increaseCounters()
   }
-
+  // this.setState((state, props) => ({
+  //   counter: state.counter + props.increment
+  // })); HOW CAN I USE THIS CORRECT FUNCTION?? https://reactjs.org/docs/state-and-lifecycle.html
   decreaseCounters = () => {
-      this.props.countersCount > 0 ? 
+      this.props.countersCount >= 1 ? 
       this.props.decreaseCounters() : 
       null
   }

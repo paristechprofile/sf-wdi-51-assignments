@@ -15,6 +15,7 @@ class App extends Component {
 
   decreaseCounters = () => {
     let counters = this.state.counters - 1
+    console.log({counters})
     this.setState({ counters })
   }
   
