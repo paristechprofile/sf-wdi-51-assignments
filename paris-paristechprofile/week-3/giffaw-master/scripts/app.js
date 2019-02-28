@@ -5,9 +5,10 @@ console.log('1');
 //search bar
 //results
 
-const success = (e) => {
-    console.log(e)
-    response.data.forEach( gif => {
+const success = (res) => {
+    console.log('2');
+    console.log(res)
+    res.data.forEach( gif => {
         $('.gif-gallery').append(`
             <div>
                 <h4>${gif.title}</h4>
@@ -16,26 +17,23 @@ const success = (e) => {
         `)
     })
 };
-console.log('2');
+
 const error = (error) => {
     console.log(error)
 };
 console.log('3');
 
-
-
-let search = (e) => {
-    console.log(e)
-    // e.preventDefault();
-
-    const base = 'http://api.giphy.com/v1/gifs/trending'/* 'http://api.giphy.com/v1/gifs/search?q=' */;
+let search = () => {
+    // console.log(e)
+    // e.preventDefault(); 
+    const base = 'http://api.giphy.com/v1/gifs/search?q=';
+    let query = $(".gif-input").val();
     const apiKey = '&api_key=QIgErT45Ai5SJuAOiCujMR2Jjser4vXZ';
-    /* let query = $(".gif-input").val(); */
     console.log('4');
 
     $.ajax({
         method: "GET",
-        url: 'http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=QIgErT45Ai5SJuAOiCujMR2Jjser4vXZ&limit=5',
+        url: base+query+apiKey,
         success: success,
         error: error
     })
@@ -43,9 +41,10 @@ let search = (e) => {
     console.log('6');
     
 };
-console.log('7');
-$("#giphySearch").on("submit", search()); 
-console.log('1');
+console.log(success);
+$("#giphySearch").on("submit", search);
+
+console.log('8');
 /* 
 
 //header
