@@ -2,6 +2,22 @@
 .container{
 	margin:0em;
 }
+a {
+    text-decoration: none;
+    color: #7B98AA;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+h1 a, h1 a:hover, header h2 {
+    color: #fff;
+}
+
+h1 {
+    font-size: 37.5px;
+    font-size: 2.5rem;
+    letter-spacing: 12px;
+    letter-spacing: .8rem;
+}
 header {
 	background-image: url('../images/home_header_bg.jpg');
 	background-size: cover;

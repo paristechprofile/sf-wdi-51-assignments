@@ -1,5 +1,5 @@
 import React from 'react';
-import { SocialIcon } from 'react-social-icons';
+// import { SocialIcon } from 'react-social-icons';
 import './Footer.css'
 // npm install react-social-icons --save-dev
 // https://www.npmjs.com/package/react-social-icons
@@ -7,13 +7,13 @@ import './Footer.css'
 const footer = () => {
     return (
         <footer>
-		<div className="wrap">
-			<div className="social-links">
-                <SocialIcon className="instagram" url="http://instagram.com" />
-				<SocialIcon className="twitter" url="http://twitter.com/jaketrent" />
-                <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+		<div className="row">
+			<div className="col-12">
+                <a href="#"><i className="instagram"></i></a>
+				<a href="#"><i className="twitter"></i></a>
+                <a href="#"><i className="fa fa-facebook-square"></i></a>
             </div>
-            <div className="footerdiv">
+            <div className="row">
 			    <input type="text" placeholder="Email Address"/>
 			    <button type="submit">Keep in Touch</button>
             </div>

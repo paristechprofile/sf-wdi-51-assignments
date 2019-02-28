@@ -7,15 +7,13 @@ class Counter extends Component {
 
   increaseCount = () => {
     let newCount = this.state.count + 1;
-  
     this.setState({
       count: newCount
     });
   }
   
   decreaseCount = () => {
-    let newCount = this.state.count -1;
-  
+    let newCount = this.state.count - 1;
     this.setState({
       count: newCount
     });

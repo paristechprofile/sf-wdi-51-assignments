@@ -2,11 +2,11 @@ var stock = {};
 window.onload = function (stock) {
     stock = {
       fruit: [  
-       	  {name: "Apple", description: "This is where a description of an apple goes.", price: 2.99, image: "./assets/apples.jpg", id: "apple", div: document.getElementById("apple")},
-       	  {name: "Banana", description: "This is where a description of a banana goes.", price: 1.99, image: "./assets/bananas.jpg", id: "banana", div: document.getElementById("banana")},
-          {name: "Orange", description: "This is where a description of an orange goes.", price: 3.99, image: "./assets/oranges.jpg", id: "orange", div: document.getElementById("orange")},
-          {name: "Mango", description: "This is where a description of a mango goes.", price: 4.99, image: "./assets/mango.jpg", id: "mango", div: document.getElementById("mango")},
-          {name: "Kiwi", description: "This is where a description of a kiwi goes.", price: 2.99, image: "./assets/kiwi.jpg", id: "kiwi", div: document.getElementById("banana")}
+        {name: "Apple", description: "This is where a description of an apple goes.", price: 2.99, image: "./assets/apples.jpg", id: "apple", div: document.getElementById("apple")},
+        {name: "Banana", description: "This is where a description of a banana goes.", price: 1.99, image: "./assets/bananas.jpg", id: "banana", div: document.getElementById("banana")},
+        {name: "Orange", description: "This is where a description of an orange goes.", price: 3.99, image: "./assets/oranges.jpg", id: "orange", div: document.getElementById("orange")},
+        {name: "Mango", description: "This is where a description of a mango goes.", price: 4.99, image: "./assets/mango.jpg", id: "mango", div: document.getElementById("mango")},
+        {name: "Kiwi", description: "This is where a description of a kiwi goes.", price: 2.99, image: "./assets/kiwi.jpg", id: "kiwi", div: document.getElementById("banana")}
       ],
       veggies: [
         {name: "Eggplant", description: "This is where a description of an eggplant goes.", price: 2.99, image: "./assets/eggplant.jpg", id: "eggplant", div: document.getElementById("eggplant")},
