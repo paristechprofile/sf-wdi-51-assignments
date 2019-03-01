@@ -9,10 +9,10 @@ class NavBar extends Component{
         return(
             <nav>
                 <ul>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><Link to="index.html#about">About</Link></li>
+                    <li><Link to="index.html#gallery">Gallery</Link></li>
                     <li><Link to="/blog">Blog</Link></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><Link to="index.html#contact">Contact</Link></li>
                 </ul>
             </nav>
         )

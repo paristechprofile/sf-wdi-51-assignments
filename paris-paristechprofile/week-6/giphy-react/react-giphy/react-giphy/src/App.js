@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 //   Switch
 // } from 'react-router-dom';
 import './App.css';
+
+import SearchContainer from './SearchContainer/SearchContainer';
 // import axios from 'axios';
 // import SearchContainer from './searchContainer';
 
@@ -12,17 +14,18 @@ import './App.css';
 class Home extends Component {
   render() {
     return (
-      <div>
-        {/* <header>
-          <NavBar/>
-            </header>
+      // <div>
+      //   <header>
+      //     <NavBar/>
+      //       </header>
             <main>
-              <section className="jumbotron text-center">
+              <section className="row searchContainer">
+              <SearchContainer/>
               </section>
-              <section className="searchContainer"></section>
+
             </main>
-        <Footer/> */}
-      </div>
+      //   <Footer/> 
+      // </div>
     );
   }
 }

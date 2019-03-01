@@ -1,6 +1,5 @@
 console.log('1');
 
-
 //header
 //search bar
 //results
@@ -23,9 +22,9 @@ const error = (error) => {
 };
 console.log('3');
 
-let search = () => {
+const search = (e) => {
     // console.log(e)
-    // e.preventDefault(); 
+    e.preventDefault(); 
     const base = 'http://api.giphy.com/v1/gifs/search?q=';
     let query = $(".gif-input").val();
     const apiKey = '&api_key=QIgErT45Ai5SJuAOiCujMR2Jjser4vXZ';
@@ -41,8 +40,10 @@ let search = () => {
     console.log('6');
     
 };
-console.log(success);
-$("#giphySearch").on("submit", search);
+// console.log(success);
+$(".form-inline").submit(search);
+
+
 
 console.log('8');
 /* 
