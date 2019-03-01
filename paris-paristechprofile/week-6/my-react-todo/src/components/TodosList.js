@@ -14,7 +14,7 @@ class TodosList extends Component {
 
         return(
         <ul>
-            {todo}
+            {todos}
         </ul>
         )
         
