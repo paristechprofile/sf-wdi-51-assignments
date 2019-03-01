@@ -11,5 +11,9 @@ class TodoModel {
         let request = axios.post(endPoint, todo)
         return request;
     }
+    static delete(todo){
+        let request = axios.delete(`${endPoint}/${todo._id}`)
+        return request
+    }
 }
 export default TodoModel

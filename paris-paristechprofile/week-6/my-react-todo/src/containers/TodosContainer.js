@@ -20,7 +20,14 @@ class TodosContainer extends Component {
             })
         });
     }
-
+    deleteTodo = (todo) => {
+        TodoModel.delete(todo).then((res) =>{
+            let todos = this.state.todos.filter(function(todo){
+                return todo._id !== res.data._id
+            });
+            this.setState({ todos }) //ES6 magic. If the object key value pair is the same, name you can say just the one word
+        })
+    }
     createTodo = (todo) => {
         let newTodo = {
             body: todo,
@@ -36,10 +43,12 @@ class TodosContainer extends Component {
         return (
         <div className='todosContainer'>
             <TodosList 
-                todos={ this.state.todos }/>
+                todos={ this.state.todos }
+                deleteTodo={ this. deleteTodo } />
             <CreateTodoForm
                 createTodo={ this.createTodo }
                 />
+            
         </div>
         )
     }
