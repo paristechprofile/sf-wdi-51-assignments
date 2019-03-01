@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import Search from '../Search/Search';
+import Results from '../Results/Results';
 
 class SearchContainer extends Component {
     state = {
-        query: "puppies"
+        query: ""
     }
+    handleSubmit = (e)=>{
+
+    }
+
     render() {
         return (
             <div>
-                <Search/>
+                <Search onInput={this.handleSubmit}/>
+                <Results/>
             </div>
         );
     }
