@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
-import Todo from './Todo'
 
-class Todos extends Component {
+class Todo extends Component {
     render(){
         return (
             <li data-todos-index={ this.props.todo.id }>
@@ -11,4 +10,4 @@ class Todos extends Component {
     }
 }
 
-export default Todos
+export default Todo

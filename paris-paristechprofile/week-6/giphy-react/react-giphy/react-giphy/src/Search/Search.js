@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 let Search = (props) => {
     return (
         <div>
@@ -8,7 +9,8 @@ let Search = (props) => {
                 <input type="text" 
                 placeholder="Search Here"  
                 className="form-input"
-                onKeyUp={props.onInput}></input>
+                onKeyUp={props.onInput}
+                />
                 <button>GO!</button>
             </form>
         </div>
