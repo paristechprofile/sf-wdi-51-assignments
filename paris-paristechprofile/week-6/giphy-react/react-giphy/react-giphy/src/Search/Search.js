@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 class Search extends Component {
     state = {
-        query: 'hi'
+        query: 'Your hard-coded query'
     }
     handleSubmit = (e) => {
-        console.log(`happy baby for 500, Trebek`)
+        console.log(e)
         e.preventDefault();  
     };
 
