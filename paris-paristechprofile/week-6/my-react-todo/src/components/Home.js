@@ -8,6 +8,7 @@ class Home extends Component {
             </h2>
         );
     }
+    
 }
 
 export default Home;
