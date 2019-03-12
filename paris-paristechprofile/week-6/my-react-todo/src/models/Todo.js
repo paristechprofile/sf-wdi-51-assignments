@@ -13,7 +13,11 @@ class TodoModel {
     }
     static delete(todo){
         let request = axios.delete(`${endPoint}/${todo._id}`)
-        return request
+        return request;
+    }
+    static update(todo, updateInfo){
+        let request = axios.put(`${endPoint}/${todo._id}, updateInfo`)
+        return request;
     }
 }
 export default TodoModel
